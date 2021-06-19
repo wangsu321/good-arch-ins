@@ -1,0 +1,4 @@
+name2="/home/su"
+name=`pwd`;if [ $name != $name2 ];then echo bad;mvto=1;else echo good;mvto=0 ;fi
+if [ $mvto -eq 1 ];then mv $0 $name2 ;cd /home/su/dl/gitup/  ;git commit -m "test";fi
+#sleep 10;mv $0 `pwd` ;fi
